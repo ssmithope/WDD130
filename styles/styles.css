@@ -29,11 +29,6 @@ main {
     max-width: 840px;
 }
 
-main img {
-  width: 150px;
-  height: auto;
-}
-
 aside {
   width: 20rem;
   margin: 1rem;
@@ -47,6 +42,11 @@ aside {
 aside img {
   width: 200px;
   height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
 }
 
 p { padding: 0;}
