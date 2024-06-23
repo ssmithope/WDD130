@@ -1,6 +1,6 @@
 /* I just use the same color for the background. */
 
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
 body {
   font-family: var(--paragraph-font);
@@ -26,7 +26,7 @@ body {
 body {
   font-family: var(--paragraph-font);
   /* max-width: 960px; (wanted to use this function but I keep it commented.)*/ 
-  margin: auto;
+  /* margin: auto;
   padding: 20px;
 }
     
@@ -64,4 +64,56 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+} */ 
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, code {
+  font: 15px/22px Arial, sans-serif;
+}
+
+html {
+  background: #fff;
+  color: #222;
+  padding: 15px;
+}
+
+body {
+  background: 100% 5px no-repeat;
+  margin-top: 0;
+  min-height: 180px;
+  padding: 30px 0 15px;
+}
+
+* > body {
+  padding-right: 205px;
+}
+
+p {
+  margin: 22px 0 0;
+  overflow: hidden;
+}
+
+ins {
+  text-decoration: none;
+  color: #777;
+}
+
+.projectLogo a {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #63666a;
+  line-height: 1.375;
+  text-decoration: none;
+}
+
+.projectLogo img {
+  margin: -1px 0 -4px;
+  vertical-align: middle;
 }
