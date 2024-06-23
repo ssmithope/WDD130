@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap'); */
 
 :root {
   --primary-color: #999ca7;
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 
-
+/* 
 
 * {
   margin: 0;
@@ -113,4 +113,4 @@ ins {
 .projectLogo img {
   margin: -1px 0 -4px;
   vertical-align: middle;
-}
+} */
