@@ -1,20 +1,20 @@
-/* I've modified the import url.*/ 
+/*I've modified the import url.*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 :root {
-  --primary-color: #ffffff; /* White background color */
-  --secondary-color: #6b8f85; /* Secondary color */
-  --accent1-color: #118AB2; /* Accent color 1 */
-  --accent2-color: #404c7a; /* Additional accent color */
+  --primary-color: #0c0808; 
+  --secondary-color: #6b8f85; 
+  --accent1-color: #118AB2; 
+  --accent2-color: #404c7a; 
 
-  --heading-font: 'Open Sans', sans-serif; /* Heading font */
-  --paragraph-font: 'Open Sans', sans-serif; /* Paragraph or default font */
+  --heading-font: 'Open Sans', sans-serif; 
+  --paragraph-font: 'Open Sans', sans-serif; 
 
-  --nav-background-color: #c8d8cb; /* Navigation background color */
-  --nav-link-color: #999ca7; /* Navigation link color */
-  --nav-hover-link-color: #118AB2; /* Navigation hover link color */
-  --nav-hover-background-color: #404c7a; /* Navigation hover background color */
+  --nav-background-color: #c8d8cb; 
+  --nav-link-color: #999ca7; 
+  --nav-hover-link-color: #118AB2; 
+  --nav-hover-background-color: #404c7a; 
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: var(--primary-color); /* Set the text color to white */
+  color: var(--primary-color); 
 }
 
 header {
@@ -35,7 +35,7 @@ header {
 
 p {
   padding: 25px;
-  background-color: var(--secondary-color); /* Set paragraph background color */
+  background-color: var(--secondary-color); 
 }
 
 nav {
