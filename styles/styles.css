@@ -79,7 +79,12 @@
     padding: 1rem 0; /* Adds padding above and below the footer content */
   }
   
-
+  /* Class Selectors */
+  .active-link {
+    color: #4CAF50; /* Sets the text color to a shade of green */
+    font-weight: bold; /* Makes the text bold */
+    text-decoration: underline; /* Underlines the text */
+  }
 
 
 
