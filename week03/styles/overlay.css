@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 5px #777;
+  }
+  
+  .herodiv {
+    position: relative; /* Re-added to make .stats position absolute relative to this container */
+    margin: 10px auto;
+  }
+  
+  .herodiv img {
+    width: 100%;
+    height: auto; /* Changed to maintain aspect ratio */
+    object-fit: cover;
+  }
+  
+  .stats {
+    position: absolute;
+    top: 10px; /* Adjusted to give space from the top edge */
+    right: 10px; /* Adjusted to give space from the right edge */
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    padding: 0.65rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.9;
+    z-index: 10; /* Ensure the stats appear above other elements */
+  }
+  
+  
+  h3 {
+    text-shadow: 0 0 15px #333;
+    border-bottom: 1px solid #999;
+    margin-bottom: 0.3rem;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Added to stretch footer across the bottom */
+    margin: 1rem;
+    border-top: 1px solid #000;
+    padding: 0.5rem;
+    color: navy;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center; /* Centered the footer content */
+  }
+  
