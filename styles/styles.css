@@ -1,4 +1,94 @@
-nav {
+/* Universal selector rule */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    background-color: steelblue;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    display: inline-block; /* Changed to inline-block for horizontal layout */
+    padding: 20px;
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  /* Header styling */
+  h1 {
+    color: steelblue;
+  }
+  
+  /* Main content styling */
+  main {
+    max-width: 840px;
+    margin: auto; /* Centers the main content */
+  }
+  
+  /* Profile image styling */
+  main img {
+    float: right; /* Floats the image to the right */
+    margin-left: 20px; /* Adds space between the image and paragraph */
+    width: 200px; /* Adjusted width */
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+  }
+  
+  /* Paragraph styling */
+  p {
+    padding: 10px;
+  }
+  
+  /* Box class styling */
+  .box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: #ddd; /* Example background color */
+    color: #000; /* Example text color */
+  }
+  
+  /* Aside element styling */
+  aside {
+    position: relative; /* Sets position context for absolute elements */
+    width: 20rem;
+    margin: 1rem auto; /* Centers the aside element */
+    text-align: center;
+  }
+  
+  /* Utah heading styling */
+  aside h2 {
+    position: absolute; /* Positions the heading absolutely within the aside */
+    top: 47px; /* Distance from the top of the aside */
+    left: 150px; /* Distance from the left of the aside */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 5px; /* Padding around the text */
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem 0; /* Adds padding above and below the footer content */
+  }
+  
+
+
+
+
+
+
+
+
+  /* here is the previous css code
+/*nav {
     background-color: steelblue;
     padding: 10px;
 }
@@ -33,7 +123,7 @@ aside {
   width: 20rem;
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
-  padding: 1rem;
+  /*padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: center;
@@ -55,4 +145,4 @@ footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
-}
+}*/
