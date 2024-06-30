@@ -21,25 +21,44 @@ body {
     margin: auto;
 }
 
-header, footer {
+header {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-header img {
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .logo {
     max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
 }
 
 h1, h2 {
@@ -53,38 +72,42 @@ p {
 /* Hero Section */
 .hero {
     position: relative;
-    text-align: center;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-}
-
-.hero img {
-    width: 100%;
-    display: block;
-    height: auto;
+    text-align: center;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--hero-overlay-color);
-    padding: 1rem;
+    margin: 0;
+    font-size: 3rem;
 }
 
-article {
+.overlay {
+    background-color: var(--hero-overlay-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 10%;
-    background-color: var(--hero-overlay-color);
-    padding: 1rem;
-    color: white;
-    text-align: left;
 }
 
-article img {
-    float: right;
-    margin-left: 1rem;
+.client-image {
+    width: 150px;
+    height: auto;
+}
+
+.overlay p {
+    margin: 0;
 }
 
 /* History and Adventure Sections */
@@ -92,26 +115,43 @@ section {
     margin: 2rem 0;
 }
 
-section h2 {
+.history h2, .adventure h2 {
     color: var(--secondary-color);
 }
 
-section img {
-    width: 100%;
-    max-width: 200px;
-    margin: 0.5rem;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
 }
 
 /* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: left;
+    padding: 1rem 0;
+}
+
 footer p {
     margin: 0;
 }
 
-footer a {
-    text-decoration: none;
+footer .social-media {
+    margin-top: 1rem;
 }
 
-footer img {
-    width: 30px;
+footer .social-media a {
+    text-decoration: none;
     margin: 0 0.5rem;
+}
+
+footer .social-media img {
+    width: 30px;
 }
