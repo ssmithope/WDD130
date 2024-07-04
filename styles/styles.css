@@ -1,12 +1,156 @@
+
 /* Universal selector rule */
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute nav items */
+  background-color: steelblue;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Header and Footer styling */
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto; /* Centers the content */
+}
+
+/* H1 element styling */
+h1 {
+  color: steelblue;
+  border-bottom: 1px solid black; /* Bottom border */
+  padding-bottom: 0.5rem;
+}
+
+/* Style adjustments for main and aside elements */
+main, aside {
+  padding: 1rem;
+}
+
+/* Profile image styling */
+main img {
+  float: right; /* Floats the image to the right */
+  margin-left: 20px; /* Adds space between the image and paragraph */
+  margin-top: 20px;
+  width: 200px; /* Adjusted width */
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+/* Utah image styling */
+aside img {
+  max-width: 100%; /* Ensures the image fits within its container */
+  height: auto; /* Maintains aspect ratio */
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+
+/* Paragraph styling */
+p {
+  padding: 10px;
+}
+
+/* Box class styling */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  background-color: #ddd; /* Example background color */
+  color: #000; /* Example text color */
+}
+
+/* Add this to your existing styles.css file */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split the grid into two equal columns */
+  gap: 1rem; /* Add space between columns */
+  align-items: start; /* Align items to the start of the grid area */
+}
+
+/* Aside element styling */
+aside {
+  width: 100%; /* Full width within the grid column */
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+/* Utah heading styling */
+aside h2 {
+  position: absolute; /* Positions the heading absolutely within the aside */
+  top: 47px; /* Distance from the top of the aside */
+  left: 150px; /* Distance from the left of the aside */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 5px; /* Padding around the text */
+}
+
+/* Footer styling */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+  padding: 1rem 0; /* Adds padding above and below the footer content */
+}
+
+/* Class Selectors */
+.active-link {
+  color: #4CAF50; /* Sets the text color to a shade of green */
+  font-weight: bold; /* Makes the text bold */
+  text-decoration: underline; /* Underlines the text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Previous css code */
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
   /* Navigation bar styling */
-  nav {
+  /*nav {
     background-color: steelblue;
     padding: 10px;
   }
@@ -14,77 +158,82 @@
   nav a {
     color: white;
     display: inline-block; /* Changed to inline-block for horizontal layout */
-    padding: 20px;
+    /*padding: 20px;
     text-decoration: none; /* Removes underline from links */
-  }
+  
   
   /* Header styling */
-  h1 {
+  /*h1 {
     color: steelblue;
   }
   
   /* Main content styling */
-  main {
+  /*main {
     max-width: 840px;
     margin: auto; /* Centers the main content */
-  }
+  
   
   /* Profile image styling */
-  main img {
+  /*main img {
     float: right; /* Floats the image to the right */
-    margin-left: 20px; /* Adds space between the image and paragraph */
-    width: 200px; /* Adjusted width */
-    height: auto;
+    /*margin-left: 20px; /* Adds space between the image and paragraph */
+    /*width: 200px; /* Adjusted width */
+    /*height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-  }
+  }*/
   
   /* Paragraph styling */
-  p {
+  /*p {
     padding: 10px;
   }
   
   /* Box class styling */
-  .box {
+  /*.box {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid rgba(0,0,0,.1);
     background-color: #ddd; /* Example background color */
-    color: #000; /* Example text color */
-  }
+    /*color: #000; /* Example text color */
+  
   
   /* Aside element styling */
-  aside {
+  /*aside {
     position: relative; /* Sets position context for absolute elements */
-    width: 20rem;
+    /*width: 20rem;
     margin: 1rem auto; /* Centers the aside element */
-    text-align: center;
+    /*text-align: center;
   }
   
   /* Utah heading styling */
-  aside h2 {
+  /*aside h2 {
     position: absolute; /* Positions the heading absolutely within the aside */
-    top: 47px; /* Distance from the top of the aside */
-    left: 150px; /* Distance from the left of the aside */
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
-    padding: 5px; /* Padding around the text */
-  }
+    /*top: 47px; /* Distance from the top of the aside */
+    /*left: 150px; /* Distance from the left of the aside */
+    /*background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    /*padding: 5px; /* Padding around the text */
+  
   
   /* Footer styling */
-  footer {
+  /*footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
     padding: 1rem 0; /* Adds padding above and below the footer content */
-  }
+  
   
   /* Class Selectors */
-  .active-link {
+  /*.active-link {
     color: #4CAF50; /* Sets the text color to a shade of green */
-    font-weight: bold; /* Makes the text bold */
-    text-decoration: underline; /* Underlines the text */
-  }
+    /*font-weight: bold; /* Makes the text bold */
+    /*text-decoration: underline; /* Underlines the text */
+  
+
+  /*header, footer {
+  max-width: 840px;
+  margin: 0 auto;
+ }*/
 
 
 
@@ -92,6 +241,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+ 
   /* here is the previous css code
 /*nav {
     background-color: steelblue;
@@ -150,4 +310,4 @@ footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
-}*/
+} */
