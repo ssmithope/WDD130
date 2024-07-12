@@ -20,6 +20,13 @@ body {
     color: #333;
   }
   
+  .checkmark {
+    color: #007BFF;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
   .question {
     margin-bottom: 20px;
   }
