@@ -170,7 +170,7 @@ footer .social-media img {
 
 .employee img {
     width: 50%;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .employee p {
@@ -224,4 +224,11 @@ footer .social-media img {
 
 #contact-form button:hover {
     background-color: #555;
+}
+
+/* Google Map */
+.google-map {
+    width: 600px;
+    height: 450px;
+    border: 0;
 }
