@@ -1,4 +1,14 @@
-/* General Styles */
+/* rafting.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --hero-overlay-color: rgba(0, 0, 0, 0.5);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
@@ -10,72 +20,51 @@ body {
 }
 
 header {
-    margin: 1rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
     background-color: var(--primary-color);
-    color: rgb(8, 6, 6);
+    color: white;
     padding: 1rem;
-    position: relative; /* Ensure header is positioned relative */
-    z-index: 1; /* Ensure header is above other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    width: 64px;
-    height: auto;
-}
-
-h1 {
-    font-size: 2rem;
-    font-family: Acme, Arial, sans-serif;
-    margin: 0;
+header img {
+    max-width: 100px;
 }
 
 nav {
-    text-align: right;
-}
-
-.navigation {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 1rem;
 }
 
-.navigation li {
-    margin-left: 1rem;
-}
-
-.navigation a {
-    display: block;
-    color: navy;
-    padding: 20px;
+nav a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.navigation a:hover {
-    color: tomato;
-    font-weight: 700;
+nav a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 60vh; /* Adjust the height as needed */
+    height: 60vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
-    margin-top: 2rem; /* Add margin to move the hero section down */
-    z-index: 0; /* Ensure hero section is below the header */
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero .overlay {
@@ -86,172 +75,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    position: relative; /* Ensure overlay is positioned relative */
-}
-
-.client-image {
-    width: 150px;
-    height: auto;
-}
-
-.overlay p {
-    margin: 0;
-}
-
-/* History and Adventure Sections */
-section {
-    margin: 2rem 0;
-}
-
-.history h2, .adventure h2 {
-    color: var(--secondary-color);
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.gallery figure {
-    width: 30%;
-    text-align: center;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: left;
-    padding: 1rem 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer .social-media {
-    margin-top: 1rem;
-    text-align: right;
-}
-
-footer .social-media a {
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-footer .social-media img {
-    width: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Previous code*/
-
-
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-    --background-color: #f4f4f4;
-    --hero-overlay-color: rgba(0, 0, 0, 0.5);
-}
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
-    margin: auto;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-header .logo {
-    max-width: 100px;
-    margin-bottom: 1rem;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.icons {
-    display: flex;
-    gap: 10px;
-}
-
-h1, h2 {
-    color: var(--primary-color);
-}
-
-p {
-    color: var(--text-color);
-}
-
-
-.hero {
     position: relative;
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 60vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
 }
 
 .hero h1 {
@@ -259,26 +83,16 @@ p {
     font-size: 3rem;
 }
 
-.overlay {
-    background-color: var(--hero-overlay-color);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    position: absolute;
-    bottom: 20%;
-    right: 10%;
+.hero p {
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 .client-image {
+    float: right;
     width: 150px;
     height: auto;
-}
-
-.overlay p {
-    margin: 0;
+    margin-top: 1rem;
 }
 
 section {
@@ -300,7 +114,6 @@ section {
     width: 30%;
     height: auto;
 }
-
 
 footer {
     background-color: var(--primary-color);
