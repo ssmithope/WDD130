@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.main-header {
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.activities-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.activity {
+    text-align: center;
+    width: 30%;
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+.icon-river {
+    background-image: url('images/icon-river.png');
+}
+
+.icon-camping {
+    background-image: url('images/icon-camping.png');
+}
+
+.icon-rapids {
+    background-image: url('images/icon-rapids.png');
+}
+
+.trail-section {
+    background-image: url('images/trail.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.trail-content h2 {
+    font-size: 2em;
+    margin: 0 0 20px 0;
+}
+
+.trail-content button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
