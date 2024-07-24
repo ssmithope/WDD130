@@ -5,20 +5,70 @@ body {
     color: #333;
 }
 
-.main-header {
-    background-image: url('images/header.jpg');
+header {
+    background-image: url('images/hero.jpg');
     background-size: cover;
     color: white;
     text-align: center;
     padding: 100px 0;
 }
 
-.header-content h1 {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
     font-size: 3em;
     margin: 0;
 }
 
-.activities-section {
+.hero p {
+    font-size: 1.5em;
+}
+
+.main-image {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.activities {
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -26,7 +76,6 @@ body {
 
 .activity {
     text-align: center;
-    width: 30%;
 }
 
 .activity img {
@@ -34,52 +83,40 @@ body {
     height: auto;
 }
 
-.icon {
-    display: block;
-    margin: 10px auto;
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-}
-
-.icon-river {
-    background-image: url('images/icon-river.png');
-}
-
-.icon-camping {
-    background-image: url('images/icon-camping.png');
-}
-
-.icon-rapids {
-    background-image: url('images/icon-rapids.png');
+.activity h2 {
+    margin-top: 10px;
 }
 
 .trail-section {
-    background-image: url('images/trail.jpg');
-    background-size: cover;
-    color: white;
+    position: relative;
     text-align: center;
-    padding: 50px 0;
-}
-
-.trail-content h2 {
-    font-size: 2em;
-    margin: 0 0 20px 0;
-}
-
-.trail-content button {
-    background-color: #ff6600;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
 }
 
-.main-footer {
+.trail-image {
+    width: 100%;
+    height: auto;
+}
+
+.trail-image img {
+    width: 100%;
+    height: auto;
+}
+
+.trail-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+footer {
     background-color: #333;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 20px 0;
 }
 
