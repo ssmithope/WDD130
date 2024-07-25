@@ -6,22 +6,30 @@ body {
 }
 
 header {
-    background-image: url('images/hero.jpg');
+    background-image: url('../images/hero.jpg');
     background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 20px 0;
+    position: relative;
+    height: 100vh; /* Full viewport height */
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 nav .logo {
+    position: absolute;
+    left: 20px;
     font-size: 1.5em;
     color: white;
 }
@@ -30,6 +38,8 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 nav ul li {
@@ -43,7 +53,10 @@ nav ul li a {
 }
 
 .hero {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
@@ -60,7 +73,6 @@ nav ul li a {
 .main-image {
     text-align: center;
     margin: 20px 0;
-    padding: 0 20px;
 }
 
 .main-image img {
@@ -76,6 +88,8 @@ nav ul li a {
 
 .activity {
     text-align: center;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .activity img {
@@ -88,36 +102,45 @@ nav ul li a {
 }
 
 .trail-section {
-    position: relative;
-    text-align: center;
-    color: white;
+    background-color: rgb(177, 126, 135);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.trail-image {
-    width: 100%;
-    height: auto;
+.trail-content {
+    display: flex;
+    align-items: center;
 }
 
-.trail-image img {
-    width: 100%;
+.trail-content img {
+    width: 50%;
     height: auto;
+    margin-right: 20px;
 }
 
 .trail-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
+    font-size: 1.5em;
+    color: #333;
 }
 
 footer {
     background-color: #333;
     color: white;
-    text-align: right;
+    text-align: center;
     padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.social-icons {
+    display: flex;
 }
 
 .social-icons img {
