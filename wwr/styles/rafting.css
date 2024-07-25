@@ -152,18 +152,17 @@ section {
     padding: 1rem;
     text-align: center;
 }
+#team {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start; 
+    text-align: center;
+}
 
 #team h2 {
     text-align: left;
-    margin-left: 1rem; /* Optional: Add some left margin for spacing */
-}
-
-#team {
-    display: left;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    text-align: center;
+    margin-left: 1rem; 
 }
 
 .employee {
@@ -174,9 +173,8 @@ section {
 .employee img {
     max-width: 70%;
     height: auto;
-    border-radius: 50%; /* Optional: Make images circular */
+    border-radius: 50%; 
 }
-
 
 
 .trip img {
