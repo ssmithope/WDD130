@@ -152,30 +152,6 @@ section {
     padding: 1rem;
     text-align: center;
 }
-#team {
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: flex-start; 
-    text-align: center;
-}
-
-#team h2 {
-    text-align: left;
-    margin-left: 1rem; 
-}
-
-.employee {
-    flex: 1 1 200px;
-    max-width: 200px;
-}
-
-.employee img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 50%; 
-}
-
 
 .trip img {
     width: 100%;
@@ -243,8 +219,4 @@ footer .social-media img {
 footer a {
     color: white;
     text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }

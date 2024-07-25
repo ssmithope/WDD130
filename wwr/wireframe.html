@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe - White Water Rafting Company</title>
+    <link rel="stylesheet" href="styles/wireframe.css">
+</head>
+<body>
+    <header>
+        <h1>Wireframe - White Water Rafting Company</h1>
+    </header>
+    <main>
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label>Purpose of Message:</label>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="general">
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/smith.jpg" alt="Smith Eutrope - Guide">
+                <p>Smith Eutrope - Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/emily.jpg" alt="Jane Smith - Customer Service">
+                <p>Jane Smith - Customer Service</p>
+            </div>
+            <div class="employee">
+                <img src="images/jane.jpg" alt="Emily Johnson - Manager">
+                <p>Emily Johnson - Manager</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 White Water Rafting Company. Created by Smith Eutrope.</p>
+    </footer>
+</body>
+</html>
