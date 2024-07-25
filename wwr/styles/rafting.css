@@ -1,12 +1,13 @@
-/* rafting.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
     --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --secondary-color: #27ae60; /* Darkened secondary color */
     --text-color: #333;
     --background-color: #f4f4f4;
     --hero-overlay-color: rgba(0, 0, 0, 0.5);
+    --cta-color: #e74c3c;
+    --cta-hover-color: #c0392b;
 }
 
 body {
@@ -20,21 +21,37 @@ body {
 }
 
 header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
 }
 
 header img {
     max-width: 100px;
 }
 
+header h1 {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
 nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     gap: 1rem;
+    justify-content: end;
+    text-align: right;
 }
 
 nav a {
@@ -97,22 +114,108 @@ nav a:hover {
 
 section {
     margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.history h2, .adventure h2 {
-    color: var(--secondary-color);
+.call-to-action {
+    background-color: var(--cta-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
-.gallery {
+.call-to-action a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.call-to-action a:hover {
+    color: var(--cta-hover-color);
+}
+
+.trip-descriptions {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    gap: 1rem;
 }
 
-.gallery img {
-    width: 30%;
+.trip {
+    flex: 1 1 calc(33% - 1rem);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+#team h2 {
+    text-align: left;
+    margin-left: 1rem; /* Optional: Add some left margin for spacing */
+}
+
+#team {
+    display: left;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.employee {
+    flex: 1 1 200px;
+    max-width: 200px;
+}
+
+.employee img {
+    max-width: 70%;
     height: auto;
+    border-radius: 50%; /* Optional: Make images circular */
+}
+
+
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trip h3 {
+    color: var(--secondary-color);
+    margin: 1rem 0 0.5rem;
+}
+
+.trip p {
+    margin: 0;
+}
+
+.trip-table {
+    margin-top: 2rem;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table td {
+    background-color: #fff;
 }
 
 footer {
@@ -139,96 +242,11 @@ footer .social-media img {
     width: 30px;
 }
 
-/* Contact Information Section */
-#company-info {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#company-info p {
-    margin: 10px 0;
-}
-
-/* Team Section */
-#team {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.employee {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin: 10px;
-}
-
-.employee img {
-    width: 50%;
-    border-radius: 100%;
-}
-
-.employee p {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* Contact Form Section */
-#contact-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-#contact-form label {
-    margin-top: 10px;
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact-form input[type="radio"] {
-    margin-right: 10px;
-}
-
-#contact-form textarea {
-    height: 100px;
-}
-
-#contact-form button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: var(--primary-color);
+footer a {
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
 }
 
-#contact-form button:hover {
-    background-color: #555;
-}
-
-/* Google Map */
-.google-map {
-    width: 600px;
-    height: 450px;
-    border: 0;
+footer a:hover {
+    text-decoration: underline;
 }
